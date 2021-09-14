@@ -1,6 +1,7 @@
 from django.db import models
 from django.db.models.functions import Length
 from slugify import slugify
+
 from users.models import User
 
 from .validators import not_future_year_validator, validate_score

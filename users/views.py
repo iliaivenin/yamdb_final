@@ -1,4 +1,3 @@
-from api_yamdb import settings
 from django.contrib.auth.hashers import make_password
 from django.core.mail import send_mail
 from django.shortcuts import get_object_or_404
@@ -8,6 +7,8 @@ from rest_framework.permissions import AllowAny, IsAdminUser
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
+
+from api_yamdb import settings
 
 from .models import User
 from .permissions import IsOwner
