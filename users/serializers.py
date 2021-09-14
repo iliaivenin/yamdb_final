@@ -67,7 +67,6 @@ class TokenSerializer(serializers.Serializer):
 
     def validate_confirmation_code(self, value):
         email = self.initial_data.get('email', '')
-        # if email:
         response_code = make_password(
             password=email, salt=None, hasher='default'
         )
