@@ -67,10 +67,10 @@ class TokenSerializer(serializers.Serializer):
 
     def validate_confirmation_code(self, value):
         email = self.initial_data.get('email', '')
-        if email:
-            response_code = make_password(
-                password=email, salt=None, hasher='default'
-            )
-            if response_code != value:
-                raise ValidationError('The confirmation code is not correct')
-            return value
+        # if email:
+        response_code = make_password(
+            password=email, salt=None, hasher='default'
+        )
+        if response_code != value:
+            raise ValidationError('The confirmation code is not correct')
+        return value
