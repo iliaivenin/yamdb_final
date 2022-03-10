@@ -1,5 +1,4 @@
 # yamdb_final
-## Развёрнутый и запущенный проект можно посмотреть по адресу http://178.154.219.144/api/v1
 ![yamdb workflow](https://github.com/iliaivenin/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg)
 
 
